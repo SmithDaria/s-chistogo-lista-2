@@ -1,0 +1,282 @@
+body {
+  margin: 0;
+  background-color: #1e1e1e;
+  font-family: 'Inter-regular', Times, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+} 
+
+main {
+  flex-grow: 1;
+}
+  
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.content-section {
+  width: 360px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.content-section_theme_dark {
+ background-color: #000000;
+ color: #F5F5F5;
+ 
+}
+
+.content-section_theme_bright {
+  background-color: yellow;
+  color: #000;
+}
+
+.header {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 168px;
+}
+
+.header__logo-image {
+width: 78px;
+height: 15px;
+}
+
+.header__menu {
+color: #F5F5F5;
+}
+
+.header__menu-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 75px;
+  height: 84px;
+}
+
+.header__menu-item {
+  
+}
+
+.header__menu-link {
+  color: #F5F5F5;
+}
+
+.cover {
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  background-image: url('/images/cover.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 95% auto;
+  font-family: 'EB Garamond-regular';
+}
+
+h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 100%;
+  padding-right: 24px;
+}
+
+.accent-span {
+  display: block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.intro {
+  /* padding-top: 30px; */
+  padding-left: 20px;
+  padding-bottom: 38px;
+  padding-right: 20px;
+  color: white;
+}
+
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  padding-top: 5px;
+}
+
+.intro__title {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+
+.intro__date {
+  font-size: 16px;
+  line-height: 120%;
+  font-weight: 400;
+  color: #CCCCCC;
+  white-space: nowrap;
+}
+
+.intro__main-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #F5F5F5;
+}
+
+p+p {
+  padding-top: 24px;
+}
+
+.reasons {
+  padding: 40px 20px;
+}
+
+.content-section__subtitle {
+  font-family: 'EB Garamond-regular';
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 115%;
+  letter-spacing: 0.5px;
+}
+
+.content-section__introduction {
+  padding-top: 32px;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.content-section__list {
+  font-size: 16px;
+  padding-top: 32px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  line-height: 135%;
+}
+
+.content-section__list-accent {
+  font-family: "Inter-bold", Arial, sans-serif;
+}
+
+.how-to {
+  /* padding: 40px 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.card {
+padding: auto;
+padding-top: 20px;
+padding-right: 21px;
+padding-left: 20px;
+padding-bottom: 20px;
+margin-top: 32px;
+}
+
+.card_theme_dark {
+  background-color: #343434;
+  border-radius: 30px;
+}
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__author-photo {
+  height: 100px;
+  width: 100px;
+}
+
+.card__author-name {
+  font-family: 'Inter-bold';
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.card_text-only {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__title {
+  font-family: "EB Garamond-medium";
+  font-size: 22px;
+  line-height: 135%;
+}
+
+.card__text {
+  line-height: 135%;
+}
+
+.card_theme_bright {
+  background-color: #FEE42A;
+  color: #000;
+  border-radius: 30px;
+}
+
+.footer {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #FEE42A;
+}
+
+.footer__links {
+  display: flex;
+  gap: 17px;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  font-size: 14px;
+}
+
+
+/* footer */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+
+position: absolute;
+width: 360px;
+height: 62px;
+left: 0px;
+top: 4098px;
+
+/* yellow-bg */
+border-top: 1px solid #FEE42A;
+
+
+
+
+
+
